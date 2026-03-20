@@ -59,6 +59,105 @@ A short pre-test and matching post-test should be designed to assess student lea
 - Given a program with nested function calls, identify which function is currently on the top of the call stack at a specific point in execution.
 - Given a function call with parameters, identify the values passed into the function.
 
+### Examples of Assement Questions:
+The following assement question are ordered in difficulty from easiest to hardest to give a range of difficulty. This type of question could technically be written in any type of programming language as long as it has function calls, but these questions will be written in python as this is closer to introductory course level questions
+
+### Question 1: Invocation Order Only 
+
+Given the following python program, trace the order in which the functions are invoked.
+
+def greet(name):
+    return "Hello " + name
+
+def farewell(name):
+    return "Goodbye " + name
+
+def run():
+    first = greet("Alice")
+    second = farewell("Alice")
+    return first + " and " + second
+
+run()
+
+|Trace #|Event                                   |Details                                 |Depth|
+|-------|----------------------------------------|----------------------------------------|-----|
+|1      |                                        |                                        |     |
+|2      |                                        |                                        |     |
+|3      |                                        |                                        |     |
+|4      |                                        |                                        |     |
+|5      |                                        |                                        |     |
+|6      |                                        |                                        |     |
+|7      |                                        |                                        |     |
+|8      |                                        |                                        |     |
+
+Answer:
+|Trace #|Event                                   |Details                                 |Depth|
+|-------|----------------------------------------|----------------------------------------|-----|
+|1      |Call run()                              |no parameters                           |1    |
+|2      |Call greet("Alice")                     |name = "Alice"                          |2    |
+|3      |Call farewell("Alice")                  |name = "Alice"                          |2    |
+
+### Question 2: Entry & Exit Trace
+
+Given the following python program, trace the complete call stack, recording both when the functions are invoked and when they return.
+
+def add(a, b):
+    return a + b
+
+def multiply(x, y):
+    result = add(x, y)
+    return result * 2
+
+call = multiply(3, 4)
+
+|Trace #|Event                                   |Details                                 |Depth|
+|-------|----------------------------------------|----------------------------------------|-----|
+|1      |                                        |                                        |     |
+|2      |                                        |                                        |     |
+|3      |                                        |                                        |     |
+|4      |                                        |                                        |     |
+
+Answer:
+|Trace #|Event                                   |Details                                 |Depth|
+|-------|----------------------------------------|----------------------------------------|-----|
+|1      |Call multiply(3, 4)                     |x = 3, y = 4                            |1    |
+|2      |Call add(3, 4)                          |a = 3, b = 4                            |2    |
+|3      |Return from add                         |returns 7                               |1    |
+|4      |Return from multiply                    |result = 7, returns 14                  |0    |
+
+### Question 3: Recursion Trace
+
+Given the following python program, trace the complete call stack, recording both when the functions are invoked and when they return.
+
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+result = factorial(4)
+
+|Trace #|Event                                   |Details                                 |Depth|
+|-------|----------------------------------------|----------------------------------------|-----|
+|1      |                                        |                                        |     |
+|2      |                                        |                                        |     |
+|3      |                                        |                                        |     |
+|4      |                                        |                                        |     |
+|5      |                                        |                                        |     |
+|6      |                                        |                                        |     |
+|7      |                                        |                                        |     |
+|8      |                                        |                                        |     |
+
+Answer:
+|Trace #|Event                                   |Details                                 |Depth|
+|-------|----------------------------------------|----------------------------------------|-----|
+|1      |Call factorial(4)                       |n = 4                                   |1    |
+|2      |Call factorial(3)                       |n = 3                                   |2    |
+|3      |Call factorial(2)                       |n = 2                                   |3    |
+|4      |Call factorial(1)                       |n = 1                                   |4    |
+|5      |Return from factorial(1)                |returns 1                               |3    |
+|6      |Return from factorial(2)                |returns 2                               |2    |
+|7      |Return from factorial(3)                |returns 6                               |1    |
+|8      |Return from factorial(4)                |returns 24                              |0    |
 
 # What sets this project apart?
 
