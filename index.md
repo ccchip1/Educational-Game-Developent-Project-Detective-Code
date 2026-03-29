@@ -66,6 +66,7 @@ The following assement question are ordered in difficulty from easiest to hardes
 
 Given the following python program, trace the order in which the functions are invoked.
 
+```
 def greet(name):
     return "Hello " + name
 
@@ -78,6 +79,7 @@ def run():
     return first + " and " + second
 
 run()
+```
 
 |Trace #|Event                                   |Details                                 |Depth|
 |-------|----------------------------------------|----------------------------------------|-----|
@@ -96,6 +98,7 @@ Answer:
 
 Given the following python program, trace the complete call stack, recording both when the functions are invoked and when they return.
 
+```
 def add(a, b):
     return a + b
 
@@ -104,6 +107,7 @@ def multiply(x, y):
     return result * 2
 
 call = multiply(3, 4)
+```
 
 |Trace #|Event                                   |Details                                 |Depth|
 |-------|----------------------------------------|----------------------------------------|-----|
@@ -124,12 +128,14 @@ Answer:
 
 Given the following python program, trace the complete call stack, recording both when the functions are invoked and when they return.
 
+```
 def factorial(n):
     if n == 1:
         return 1
     return n * factorial(n - 1)
 
 result = factorial(4)
+```
 
 |Trace #|Event                                   |Details                                 |Depth|
 |-------|----------------------------------------|----------------------------------------|-----|
