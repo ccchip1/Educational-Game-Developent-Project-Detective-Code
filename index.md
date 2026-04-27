@@ -2,7 +2,7 @@
 
 ## Elevator Pitch
 
-A level-based game where players step through programs and trace function calls like a debugger, building computational thinking skills while mastering how real programs execute.
+A level-based game where players solve puzzles involving searching through python programs & learn how to properly call functions. 
 
 ## Influences (Brief)
 
@@ -41,7 +41,7 @@ This learning activity or game can be used in introductory programming courses s
 
 ## Learning Objectives
 
-- By the end of the lesson, students will be able to trace function calls using computational thinking with 80% accuracy.
+- By the end of the lesson, students will be able to trace function calls using computational thinking.
 - By the end of the lesson, students will be able to create function calls with a debugger in mind.
 - By the end of the lesson, students will be able to recognize the order of functions that are being executed.
 
@@ -175,7 +175,7 @@ Answer:
 
 ## Player Interaction Pattern
 
-This is a game for one person, they click/type with the mouse/keyboard or touch on their screen.
+This is a game for one person, they click with the mouse/type with the keyboard.
 
 ## Player Modes
 
@@ -257,29 +257,43 @@ The player takes the role of a beginner Detective solving short mysteries and ot
 
 ## Storyboarding
 
-Basic layout of your character's working space, There is a projector showing the transcript on the left, & a blackboard for taking notes on the right. Generally designed to have a viewing area on the left side, & your working space on the right side.
+This first image is a basic layout of your character's working space. There is a projector on the left that the player will be working with, & a blackboard on the right. On the table is a keyboard, an old telephone & a printer. The player can click on either the keyboard or the bottom half of the smartboard to access the python terminal, allowing them to write function calls & print statements to try to solve the puzzle (note that the top half of the smartboard is a read only, meaning it is unaccessible to the player, but it gives a brief overview of the task, as well as the list of predefined variables).
 
-[![](Detective_Code_StoryBoard1.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard1.png)
-
-
-When the player clicks the phone on the left side of the table, it will show a bubble over it giving you options for which function "phone" call you want to choose, it will also have you choose what the parameters are.
-
-[![](Detective_Code_StoryBoard2.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard2.png)
+[![](Detective_Code_StoryBoard_Version2.1.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard_Version2.1.png)
 
 
-Example of what the function phone call looks like.
+When the player clicks the phone at the center of the table, it will show a dialogue message based off of the function they choose. This is what we will call a "Function Phone Call". In order for someone to do a function phone call correctly, the text cursor in the terminal needs to be positioned specifically on top of the name of the function they want to call.
 
-[![](Detective_Code_StoryBoard3.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard3.png)
+The next image shows the function help() being called on the telephone. The help() function is meant to act as the starting place for every puzzle as it gives a proper transcript of the puzzle they need to solve, including some of the functions they can use, & the expected print output for the report.
 
-
-When the player clicks the papers on the right side of the table, It will bring up a big sheet of paper for the player write their answer in. since this game is focused around tracing function calls, most (but not all) of the levels will require listing the traces that they appear in.
-
-[![](Detective_Code_StoryBoard4.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard4.png)
+[![](Detective_Code_StoryBoard_Version2.2.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard_Version2.2.png)
 
 
-Example of what the written traces look like.
+Shown in the previous image, help() tells the player about a function called building_status() which will be used for solving the puzzle, & they are also told to call help("building_status") if they need help on how to properly use that function. The next image shows what function phone calling help("building_status") would look like.
 
-[![](Detective_Code_StoryBoard5.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard5.png)
+[![](Detective_Code_StoryBoard_Version2.3.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard_Version2.3.png)
+
+
+The next image shows the player calling the building_status() function properly thanks to the help of the help() function. This building_status() function does the typical dialogue in the function phone call, but it also shows the value that is being returned. Also on the smartboard, the player chooses to set that function call to a variable to then put in the print() statement.
+
+[![](Detective_Code_StoryBoard_Version2.4.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard_Version2.4.png)
+
+
+It is important to mention that the word bubble from the function phone call is horizontally draggable, & that is because the following image shows that the blackboard that was behind it now has information about the most recent function as well. The blackboard will create a trace of this function in the form of a table that shows the order of when functions are called or returned, as well as extra information about what arguments are being used, or what values are being returned.
+
+[![](Detective_Code_StoryBoard_Version2.5.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard_Version2.5.png)
+
+
+Next slide shows the rest of the player's print() statements for solving the rest of the puzzle. Notice they choose to have the specific function calls directly inside of the print statement instead of creating a new variable each time.
+
+[![](Detective_Code_StoryBoard_Version2.6.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard_Version2.6.png)
+
+
+When the player clicks the printer on the right side of the table, it will first run the entire python program, then it will bring up a report that shows the expected output of the print() statements. A message box will then appear spanning the bottom of the screen that will comment on how they did. It will give a positive comment if the report looks correct, & if it doesn't it will give the player a hint on how to fix it.
+
+In this final image, it is shown that the player submitted a good report, so they are prompted to click the green arrow that appeared when they are ready to move onto the next level.
+
+[![](Detective_Code_StoryBoard_Version2.7.png)](https://github.com/ccchip1/Educational-Game-Developent-Project-Detective-Code/blob/main/Detective_Code_StoryBoard_Version2.7.png)
 
 # Assets Needed
 
