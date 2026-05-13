@@ -8,56 +8,55 @@ A level-based game where players solve puzzles involving searching through pytho
 
 - Human Resource Machine:
   - Medium: Game
-  - Explanation: Human Resource Machine teaches programming logic through small puzzle challenges where players must carefully think through how instructions execute step by step. This game influences the design by emphasizing reasoning about program flow and execution order, similar to tracing function calls in a program.
+  - Explanation: Human Resource Machine teaches programming logic through small puzzle challenges where players must carefully think through how instructions execute step by step. This game is influenced by its puzzle-based approach, where players must understand how to construct correct sequences of function calls to achieve a desired output, rather than just reading code passively.
 
 - Programming Debuggers:
   - Medium: Software Tool
-  - Explanation: Debugging tools in programming environments allow programmers to step through code and observe the call stack as functions are entered and exited. This game is influenced by that process, encouraging students to simulate the same step-by-step reasoning when tracing function calls and returns.
+  - Explanation: Debugging tools in programming environments allow programmers to step through code and observe the call stack as functions are entered and exited. This game is influenced by that workflow, the telephone mechanic replicates the experience of calling a function and observing its behavior.
     
 ## Core Gameplay Mechanics (Brief)
 
-- Select which function is called next in the execution order.
-- Indicate when a function returns.
-- Identify parameter values passed into a function.
-- Identify return values produced by a function.
-- Place functions into a visual call stack to represent nested function layers.
-- Keep track of how deep a nested function goes.
+- Write function calls in a Python terminal to gather information and solve a mystery.
+- Use the help() function to learn what functions are available and how to call them correctly.
+- Use the telephone to make a "function phone call", placing the text cursor over a function name and clicking the telephone executes that specific function and displays its response as a dialogue message.
+- Use the print() statement to submit findings in a report, which is checked against the correct answer.
+- Observe the blackboard trace table to understand the order in which functions were called, what arguments were passed, what values were returned, and how deep into nested calls the program went.
+
 
 # Learning Aspects
 
 ## Learning Domains
 
 - Computer Science: specifically programming fundamentals and program execution.
-
 - Computational Thinking: decomposition, sequencing, and logical reasoning when following code execution.
 
 ## Target Audiences
 
-Students or the people who want to learn how to trace functions in program.
+Students who are learning to write and use function calls in an introductory programming course.
 
 ## Target Contexts
 
-This learning activity or game can be used in introductory programming courses such as high school AP Computer Science classes, introductory college computer science courses, or coding bootcamps. It is also suitable for guided practice in computer labs, homework exercises, and interactive learning games that reinforce program tracing. Informally, it could be used by self-learners studying programming concepts, coding clubs, or students practicing for exams that assess understanding of function calls and program execution.
+This learning activity or game can be used in introductory programming courses such as high school AP Computer Science classes, introductory college computer science courses, or coding bootcamps. It is also suitable for guided practice in computer labs, homework exercises, and interactive learning games that reinforce program tracing. Informally, it could be used by self-learners studying Python fundamentals, or students practicing how to read function documentation and translate it into correct function call syntax.
 
 ## Learning Objectives
 
-- By the end of the lesson, students will be able to trace function calls using computational thinking.
-- By the end of the lesson, students will be able to create function calls with a debugger in mind.
-- By the end of the lesson, students will be able to recognize the order of functions that are being executed.
+- By the end of instruction, students will be able to write syntactically correct function calls in Python given a function description, with 80% accuracy.
+- By the end of instruction, students will be able to use the help() function to identify available functions and their parameters, then apply that information to construct appropriate function calls.
+- By the end of instruction, students will be able to interpret the output of a function call and use it appropriately inside a print() statement to produce the correct output.
 
 ## Prerequisite Knowledge
 
-- Prior to the game, players need to be able to define the concept of function structure.
-- Prior to the game, players need to be able to explain the variable in function.
-- Prior to the game, players need to be able to demonstrate proper algorithmic thinking at the most basic level.
+- Prior to the game, players need to be able to explain what a function is and describe the difference between defining and calling a function.
+- Prior to the game, players need to be able to explain what a variable is and how to reference a variable by name in an expression.
+- Prior to the game, players need to be able to recognize what a function call looks like syntactically, including function name, parentheses, and arguments.
 
 ## Assessment Measures
 
-A short pre-test and matching post-test should be designed to assess student learning of tracing function calls and returns in a program.
+A short pre-test and matching post-test should be designed to assess student learning of writing and interpreting function calls in Python.
 
-- Given a program with multiple functions, identify the order in which the functions are called during execution.
-- Given a program with nested function calls, identify which function is currently on the top of the call stack at a specific point in execution.
-- Given a function call with parameters, identify the values passed into the function.
+- Given a function description, write a correct function call using the appropriate arguments.
+- Given a variable already defined in a program, use it as an argument in a function call and predict the output.
+- Given a nested function call, identify what value is returned by the inner function and explain how it is used as the argument for the outer function.
 
 ### Examples of Assement Questions:
 The following assement question are ordered in difficulty from easiest to hardest to give a range of difficulty. This type of question could technically be written in any type of programming language as long as it has function calls, but these questions will be written in python as this is closer to introductory course level questions
@@ -183,77 +182,71 @@ This is a game for one person, they click with the mouse/type with the keyboard.
 
 # Gameplay Objectives
 
-- Primary Objective #1:
-  - Description: Identify the order in which functions are called when a program begins execution.
-  - Alignment: This aligns with the learning objective of tracing function calls, helping students practice recognizing when functions are invoked from the main program or from other functions.
-
-- Primary Objective #2:
-  - Description: Determine the order in which functions return and what values they return.
-  - Alignment: This aligns with the learning objective of tracing function returns and understanding how return values move back through the call stack.
-
-- Primary Objective #3:
-  - Description: Identify the current layer of nested function calls while tracing program execution.
-  - Alignment: This supports the learning objective of understanding the call stack and nested function behavior during program execution.
+The player's goal in each level is to solve a mystery by writing the correct function calls in the Python terminal and submitting the right information in a printed report. To do this, the player must figure out which functions are available, learn how to call them correctly using help() and the telephone, and use print() to output the answer. The level is complete when the printed report contains the correct information and the player clicks the continue arrow.
+Alignment: This aligns with the learning objective of understanding function calls, as they are trained to get familiar with how functions calls work in order to be able to solve these puzzles.
 
 # Procedures/Actions
 
-Players interact with the game by analyzing short programs and writing out the correct steps that occur during program execution. The player reads a displayed program and then uses on-screen buttons or draggable elements to indicate when a function is called, when a function returns, and what values are passed or returned.
+- Type function calls, variable assignments, and print() statements into the terminal by clicking the keyboard or smartboard
+- Move the text cursor using the arrow keys or keyboard shortcuts to navigate the terminal
+- Click the telephone to make a function phone call on whichever function the cursor is currently over, which displays a dialogue response in a word bubble and updates the blackboard trace table
+- Click the printer to run the full terminal program and generate a report, which is checked against the correct answer and displays a hint message
+- Drag the word bubble or report panel horizontally out of the way if they are blocking something
+- Click the red X on the word bubble, report, or hint box to close them
+- Use help() with no arguments to read the full case instructions, or help('function_name') to read documentation for a specific function
 
 # Rules
 
-Players are given a short program and must correctly trace the order of function calls and returns. The player must complete the trace before the program finishes executing.
+- The top half of the smartboard is read-only and cannot be edited by the player
+- The telephone only works when the text cursor is positioned over the name of a function call in the terminal — placing it elsewhere shows an error message
+- Once the player submits a correct report, the terminal becomes read-only and can no longer be edited, though the cursor can still be moved for telephone calls
+- The player cannot move to the next level until they have submitted a correct report and clicked the continue arrow
+- Variables defined in the transcript are available to use as arguments in function calls written in the terminal
 
 # Objects/Entities
 
-- Program Display:
-  - Shows the code that the player must analyze and trace. The program includes functions, parameters, and return statements that players must follow during execution.
-
-- Function Nodes:
-  - Represent individual functions in the program. These can be highlighted or selected when a function is called or returned during gameplay.
+Smartboard — the central screen split into a read-only transcript panel on top and an editable Python terminal on the bottom
+Blackboard — displays the function trace table showing the call and return history of the most recent telephone call
+Telephone — executes the function call the cursor is over and displays its dialogue response in a word bubble
+Printer — runs the full terminal program and produces a report from all print() output, which is compared against the correct answer
+Keyboard — clicking it activates the terminal for typing
+Word bubble — a draggable panel that appears above the telephone showing the dialogue response from the most recent function phone call
+Report panel — a draggable panel showing the printed output from the most recent printer run
+Hint box — a panel spanning the bottom of the screen that gives targeted feedback after each printer submission
+Continue arrow — appears in the top left corner when the player submits a correct report, allowing them to advance to the next level
 
 ## Core Gameplay Mechanics (Detailed)
 
-- Core Gameplay Mechanic #1: Function Call Tracing  
-  Players analyze a short program and determine which function is called next in the execution order. The game pauses at specific points in the program and presents multiple possible functions that could be invoked. The player must select the correct function based on the current line of code.
+- Core Gameplay Mechanic #1: Python Terminal  
+  Players use a Python terminal to write function calls that gather information needed to solve the mystery. The terminal accepts function calls, variable assignments, and print() statements. By reading the transcript on the smartboard and using help(), players learn which functions are available, what arguments they take, and what they return. Creating a correct function call with the right arguments is the central skill the game develops.
 
-  When the player selects a function call, the game advances execution and visually shows that function being entered. This mechanic reinforces the skill of recognizing where functions are invoked and understanding how program execution moves from one function to another.
+- Core Gameplay Mechanic #2: Function Phone Call
+  Players use the telephone to make a "function phone call." With the text cursor positioned over a function name in the terminal, clicking the telephone executes that specific function call and displays a dialogue response in a word bubble, being the function's output as if it were spoken by a contact being called for information. This mechanic helps players understand that functions take inputs and produce outputs, and gives them a way to test their function calls interactively before committing to a final answer.
 
-- Core Gameplay Mechanic #2: Return Value Identification  
-  When a function finishes executing, the player must identify when the function returns and what value is returned to the previous function. The game prompts the player to choose the correct return value or confirm the function that is exiting.
-
-  This mechanic helps players understand how functions complete their work and pass information back to the calling function. It reinforces the concept of return statements and the flow of data through a program.
-
-- Core Gameplay Mechanic #3: Call Stack Construction  
-  Players build and maintain a visual representation of the call stack as the program runs. Each time a function is called, the player places it onto the stack, representing a new layer of nested function execution. When a function returns, the player removes it from the stack.
-
-  This mechanic helps players understand how nested function calls work and how the call stack changes during execution. By physically placing and removing functions from the stack, players develop a clearer mental model of how programs manage multiple active function calls.
-
+- Core Gameplay Mechanic #3: Detectives Report, & Hint Box
+  When the player clicks the printer, the entire terminal program runs and all print() output is compiled into a report. The report is checked against the correct answer and a hint box appears at the bottom of the screen giving feedback, where it congratulates the player if the report is correct, or gives a targeted hint about what went wrong if it is not. This mechanic teaches players that print() is how a program communicates its final output, and that the correctness of that output depends on whether the right function calls were made with the right arguments.
     
 ## Feedback
 
-Players receive immediate feedback through visual cues when they make tracing decisions. When a player correctly selects the next function call, the selected function is highlighted and animated as it moves onto the visual call stack. If the player correctly identifies a function return, the function smoothly pops off the stack with a confirmation sound or animation. Incorrect selections are indicated with a brief red highlight or shake animation, prompting the player to reconsider the step. These visual and audio signals help players recognize whether they are correctly identifying function calls, returns, parameters, and stack behavior.
+Players receive immediate feedback through the telephone's word bubble each time they make a function phone call. The response dialogue tells the player what the function did, and if an error occurred the bubble explains what went wrong. The blackboard trace table updates after each telephone call, showing the full call and return history for that function including argument values, & return values, giving players a visual record of what the program actually did.
 
-The call stack visualization itself also acts as continuous feedback. As players add or remove functions from the stack, they can see how nested function layers change during execution. This helps reinforce the concept of program flow and allows players to monitor their progress toward correctly tracing the program.
+When the player submits a report via the printer, the hint box at the bottom of the screen provides targeted feedback based on the specific mistake made. Different hints appear depending on whether the report is empty, a variable is undefined, the wrong function arguments were used, or the output is simply incorrect. If the report is correct, the player is congratulated and a continue button appears.
 
-Longer-term feedback is provided through a scoring and progress system. After completing a level, players receive a summary showing how many tracing steps were correct, how many hints were used, and which types of tracing actions they struggled with (such as identifying returns or parameters). Over multiple levels, the game tracks accuracy and improvement toward the learning objective of tracing function calls with at least 80% accuracy. This progress tracking helps players understand how their skills are developing and encourages continued practice.
+Longer-term feedback comes through level progression. Each level presents a new mystery that requires applying the same core skills: reading function documentation, constructing correct calls, and printing the right output, with each level putting that idea in a new context. Successfully completing a level confirms that the player can correctly write and use function calls to produce a desired result.
 
 # Story and Gameplay
 
 ## Presentation of Rules
 
-Players learn the mechanics through short interactive tutorials that introduce one concept at a time. The first level guides the player to identify the main entry point of a program and select the first function call. Visual prompts highlight the correct part of the code and briefly explain the action the player should take.
-
-As players progress, new mechanics are gradually introduced, such as identifying return values and managing the call stack. Instead of long explanations, the game uses small hints, visual highlights, and example moves to demonstrate the correct actions. Each new mechanic appears in a simple level first before being combined with other mechanics in later challenges.
+Players learn the mechanics through the first level, which acts as an interactive tutorial. The transcript on the smartboard gives a brief overview of the task and instructions for using the help() function. The help() call is pre-loaded in the terminal when the level starts, so the player's first action is naturally to use the telephone to call it and read the response. From there, the player discovers what functions are available, how to call help('function_name') for more detail, and how to use print() to submit their answer. The hint box guides players who make mistakes without directly giving away the solution.
 
 ## Presentation of Content
 
-The programming concepts are taught through practice with small programs that gradually increase in complexity. Early levels use very short programs with only one or two functions so players can clearly see how execution moves between them.
-
-Later levels introduce nested function calls, parameters, and return values. Visual tools such as the call stack and highlighted code lines help players understand what is happening during execution. By repeatedly tracing programs in an interactive way, players build a stronger mental model of how functions work together during program execution.
+Programming concepts are taught through increasingly complex mysteries rather than direct instruction. Early levels like the System Login puzzle require only a single function call with one argument, keeping the focus on the basic mechanics of function syntax and the telephone system. Later levels introduce multi-step puzzles where players must chain function calls, using the return value of one function as the argument to another to reach the correct answer. The blackboard trace table is always visible and updates with each telephone call, reinforcing how function calls, arguments, and return values relate to each other throughout the problem-solving process.
 
 ## Story (Brief)
 
-The player takes the role of a beginner Detective solving short mysteries and other problems. However, it seems as though all of the information he gathers about these mysteries have been translated into coding languages, including the reports he is given & even the speech of the people he talks to. Act as a computer program, scan through lines code, & take notes along the way to find the truth!
+The player takes the role of a beginner Detective solving short mysteries and other problems. However, after the recent robotic takeover, everything in his office that he uses to solve these mysteries is now controlled by a single python terminal, including his telephone he uses to call agents for information, his printer that he uses to print out his reports, & even the transcripts he is given that hold information about the mysteries he needs to solve is now embedded into the top part of the new terminal. Make your way through this strange new program to find the truth!
 
 ## Storyboarding
 
@@ -299,37 +292,30 @@ In this final image, it is shown that the player submitted a good report, so the
 
 ## Aethestics
 
-In the style of a cartoony detective noire film, but with a subtle static filter.
+In the style of a cartoony detective noire film.
 
 ## Graphical
 
 - Characters List
   - Detective Code (main character)
-  - Various Co-workers
-  - Various Witness
+  - Various Co-workers, & Agents
+  - Various Witnesses
 - Textures:
-  - Static filter
+  - Printer
   - Old Timey Telephone
 - Environment Art/Textures:
   - Models for Detective Code's Office 
   - Midnight crime scene
 
-
 ## Audio
-
-
-*Game region/phase/time are ways of designating a particularly important place in the game.*
 
 - Music List (Ambient sound)
   - Ace Attorney-like music for the title screen
   - Chill jazz music for the main gameplay loop
-  
-*Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, collecting a coin.*
 
 - Sound List (SFX)
   - Old phone sounds when using the phone: ringing sound, hangup sound
-  - Paper ruffling sounds when you click on the papers to go to write down a trace
-
+  - Printer sounds when the player clicks the printer to submit their report.
 
 # Metadata
 
